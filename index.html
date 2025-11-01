@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense – AI Expense Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6366f1', // Indigo-500
+              secondary: '#4f46e5', // Indigo-600
+              accent: '#fde047', // Yellow-300
+              background: '#f8fafc', // Slate-50
+              text: '#1e293b', // Slate-800
+              success: '#22c55e', // Green-500
+              warning: '#f97316', // Orange-500
+              danger: '#ef4444', // Red-500
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "jspdf": "https://aistudiocdn.com/jspdf@2.5.1/dist/jspdf.es.min.js",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.js"
+  }
+}
+</script>
+</head>
+<body class="bg-background text-text font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
